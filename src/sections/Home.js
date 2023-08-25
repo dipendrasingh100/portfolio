@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Image from '../components/Image'
 import Contact from './Contact'
 import About from './About'

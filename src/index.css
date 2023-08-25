@@ -1,13 +1,95 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html{
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  /* color: #94A9C9;
+  background: #0F172A; */
+  background: #000;
+  color: white;
+}
+
+h1,
+h4,
+p,
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background-color: rgb(248, 217, 15);
+  color: #222;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-light {
+  background: #282828;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.tab-titles>.btn {
+  display: inline-block;
+}
+
+.tab-titles{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.active, .btn-light:hover{
+  background-image: linear-gradient(to right, #3aa8cf -20%, #8755c7 82%);
+}
+
+.tab-contents{
+  display: none;
+}
+
+.tab-contents.active-tab{
+  display: block;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.content-container{
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 2rem 4rem;
+  align-items: center;
+  padding: 2rem 2.8rem;
+}
+
+.sub-container{
+  max-width: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  border: 1px solid blue;
+  background-color: #212121;
+  overflow: hidden;
+  position: relative;
 }

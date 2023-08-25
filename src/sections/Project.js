@@ -18,7 +18,7 @@ const Project = () => {
             <h3>E-Commerce Website</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequuntur quia suscipit!</p>
             <div>
-              <a href="">
+              <a href="https://www.google.com/">
                 <button className='Btn'>
                   <div className='sign'>
                     <FontAwesomeIcon icon={faCode} size="lg" style={{ color: "#ffffff", }} />
@@ -26,7 +26,7 @@ const Project = () => {
                   <div className="text">Code</div>
                 </button>
               </a>
-              <a href="" >
+              <a href="https://www.google.com/" >
                 <button className='Btn'>
                   <div className='sign'>
                     <FontAwesomeIcon icon={faUpRightFromSquare} size="lg" style={{ color: "#ffffff", }} />
@@ -37,8 +37,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="project" data-aos="fade-up"
-        >
+        <div className="project" data-aos="fade-up">
           <img src={blogImg} alt="cart" className='project-img' />
           <div className="layer">
             <h3>Blog App</h3>
@@ -63,8 +62,7 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="project" data-aos="fade-up"
-        >
+        <div className="project" data-aos="fade-up">
           <img src={frasImg} alt="cart" className='project-img' />
           <div className="layer">
             <h3>Face Recognition Based Attendance System</h3>

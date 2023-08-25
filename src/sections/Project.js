@@ -76,7 +76,7 @@ const Project = () => {
                   <div className="text">Code</div>
                 </button>
               </a>
-              <a href="" >
+              <a href="https://www.google.com/" >
                 <button className='Btn'>
                   <div className='sign'>
                     <FontAwesomeIcon icon={faUpRightFromSquare} size="lg" style={{ color: "#ffffff", }} />

@@ -26,7 +26,7 @@ a {
 }
 
 .btn {
-  padding: 12px 32px;
+  padding: 0.8rem 2rem;
   font-size: 1rem;
   text-transform: uppercase;
   background-color: rgb(248, 217, 15);
@@ -40,12 +40,39 @@ a {
   background: #282828;
   color: #fff;
   border: none;
-}
+  z-index: 1;
+  position: relative;
+  -webkit-box-shadow: 4px 6px 19px -3px rgba(255, 255, 255, 0.27);
+  box-shadow: 4px 6px 19px -3px rgba(255, 255, 255, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+ .btn-light::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(to right, #3aa8cf -20%, #8755c7 82%);
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ .btn:hover {
+  color: #e8e8e8;
+ }
+ 
+ .btn:hover::before {
+  width: 100%;
+ }
 
 .btn:hover {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
-  transition: 0.3s;
 }
 
 .tab-titles>.btn {
@@ -58,9 +85,14 @@ a {
   gap: 1rem;
 }
 
-.active, .btn-light:hover{
-  background-image: linear-gradient(to right, #3aa8cf -20%, #8755c7 82%);
+.tab-titles div .btn{
+  flex-shrink: 2%;
 }
+
+.active, .btn-light:hover{
+  background: linear-gradient(to right, #3aa8cf -20%, #8755c7 82%);
+}
+
 
 .tab-contents{
   display: none;
@@ -68,17 +100,29 @@ a {
 
 .tab-contents.active-tab{
   display: block;
-  max-width: 50rem;
+  max-width: 55rem;
   margin: auto;
 }
 
 .content-container{
-  border: 1px solid white;
+  /* border: 1px solid white; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   gap: 2rem 4rem;
+  justify-items: center;
   align-items: center;
   padding: 2rem 2.8rem;
+  animation: ex 0.5s ease-in-out forwards;
+}
+
+
+@keyframes ex{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
 }
 
 .sub-container{
@@ -88,8 +132,24 @@ a {
   align-items: center;
   justify-content: center;
   height: 6rem;
-  border: 1px solid blue;
-  background-color: #212121;
+  /* border: 1px solid blue; */
+  /* background-color: #212121; */
   overflow: hidden;
   position: relative;
+}
+
+.sub-container h3{
+  font-weight: 300;
+}
+
+
+.mb-20{
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:500px) {
+  .btn{
+    padding: 0.5rem 1rem;;
+    font-size: 0.8rem;
+  }
 }

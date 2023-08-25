@@ -21,7 +21,7 @@ const Navbar = () => {
 
         switch (true) {
             case (yscroll === 0): setSelectedNav(1); break
-            case (yscroll >= 489 && yscroll < 1260): setSelectedNav(2); break
+            case (yscroll >= 4 && yscroll < 1260): setSelectedNav(2); break
             case (yscroll >= 1260 && yscroll < 1814): setSelectedNav(3); break
             case (yscroll >= 1814): setSelectedNav(4); break
             default: setSelectedNav(1); break
@@ -38,10 +38,10 @@ const Navbar = () => {
                 <h1>Portfolio</h1>
             </a>
             <ul className={`nav-menu ${burgerClick && 'active'}`} >
-                <li><a href="#home" className={`${selectedNav === 1 && "active-s"}`}>Home</a></li>
-                <li><a href="#about" className={`${selectedNav === 2 && "active-s"}`}>About</a></li>
-                <li><a href="#projects" className={`${selectedNav === 3 && "active-s"}`}>Projects</a></li>
-                <li><a href="#contact" className={`${selectedNav === 4 && "active-s"}`}>Contact</a></li>
+                <li><a href="#home" className={`${selectedNav === 1 && "active-s"}`} onClick={()=>setBurgerClick(false)}>Home</a></li>
+                <li><a href="#about" className={`${selectedNav === 2 && "active-s"}`} onClick={()=>setBurgerClick(false)}>About</a></li>
+                <li><a href="#projects" className={`${selectedNav === 3 && "active-s"}`} onClick={()=>setBurgerClick(false)}>Projects</a></li>
+                <li><a href="#contact" className={`${selectedNav === 4 && "active-s"}`} onClick={()=>setBurgerClick(false)}>Contact</a></li>
             </ul>
             <div className="hamburger" onClick={handleBurgerClick}>
                 {burgerClick

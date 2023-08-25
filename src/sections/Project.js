@@ -9,9 +9,10 @@ import { faCode, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 const Project = () => {
   return (
     <div className='project-container' id='projects'>
-      <h2>PROJECTS</h2>
+      <h1 className='mb-20'>PROJECTS</h1>
       <div className="projects">
-        <div className="project">
+        <div className="project" data-aos="fade-up"
+        >
           <img src={cartImg} alt="cart" className='project-img' />
           <div className="layer">
             <h3>E-Commerce Website</h3>
@@ -36,7 +37,8 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="project">
+        <div className="project" data-aos="fade-up"
+        >
           <img src={blogImg} alt="cart" className='project-img' />
           <div className="layer">
             <h3>Blog App</h3>
@@ -61,7 +63,8 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="project">
+        <div className="project" data-aos="fade-up"
+        >
           <img src={frasImg} alt="cart" className='project-img' />
           <div className="layer">
             <h3>Face Recognition Based Attendance System</h3>

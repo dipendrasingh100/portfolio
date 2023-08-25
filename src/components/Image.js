@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faSquareGithub, faSquareTwitter } from '@fortawesome/free-brands-svg-icons'
 import Typed from 'typed.js'
 
+
 const Image = () => {
   const title = useRef(null)
   useEffect(() => {
@@ -12,7 +13,7 @@ const Image = () => {
       strings: ['Dipendra', 'Full-Stack Developer'],
       typeSpeed: 100,
       backSpeed: 100,
-      backDelay: 1000,
+      backDelay: 2000,
       loop: true
     });
     return () => {
@@ -26,7 +27,7 @@ const Image = () => {
         <img src={IntroImg} alt="InroImg" className='intro-img' />
       </div>
       <div className="content">
-        <p className='hello'>HELLO.</p>
+        <p className='hello' data-aos='fade-down'>HELLO.</p>
         <h1>I Am <span ref={title}>Full-Stack Developer</span></h1>
         <div className='social'>
           <a href="https://www.linkedin.com/in/dipendrahada/" target="_blank" rel="noreferrer">

@@ -1,10 +1,16 @@
+.sub-container:hover .percent{
+    display: flex;
+}
+
 .percent {
-    position: relative;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
     width: 90px;
     height: 90px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+    transition: background-color .2s;
 }
 
 .percent svg {
@@ -28,8 +34,8 @@
     stroke: var(--clr);
     stroke-dasharray: 252;
     stroke-dashoffset: calc(252 - (252 * var(--num)) /100);
-    animation: fadeIn 1s linear forwards;
-    animation-delay: 1s;
+    animation: fadeIn 0.5s linear forwards;
+    animation-timing-function: ease-in-out;
     opacity: 0;
 }
 
@@ -47,7 +53,7 @@
     inset: 5px;
     z-index: 10;
     transform: rotate(calc(3.6deg * var(--num)));
-    animation: animateDot 1s linear forwards;
+    animation: fadeIn 0.5s linear forwards;
 }
 
 @keyframes animateDot{
@@ -79,6 +85,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation: fadeIn 0.5s linear forwards;
+    opacity: 0;
 }
 
 

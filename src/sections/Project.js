@@ -11,36 +11,10 @@ const Project = () => {
     <div className='project-container' id='projects'>
       <h1 className='mb-20'>PROJECTS</h1>
       <div className="projects">
-        <div className="project" data-aos="fade-up"
-        >
-          <img src={cartImg} alt="cart" className='project-img' />
-          <div className="layer">
-            <h3>E-Commerce Website</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequuntur quia suscipit!</p>
-            <div>
-              <a href="https://www.google.com/">
-                <button className='Btn'>
-                  <div className='sign'>
-                    <FontAwesomeIcon icon={faCode} size="lg" style={{ color: "#ffffff", }} />
-                  </div>
-                  <div className="text">Code</div>
-                </button>
-              </a>
-              <a href="https://www.google.com/" >
-                <button className='Btn'>
-                  <div className='sign'>
-                    <FontAwesomeIcon icon={faUpRightFromSquare} size="lg" style={{ color: "#ffffff", }} />
-                  </div>
-                  <div className="text">Demo</div>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
         <div className="project" data-aos="fade-up">
           <img src={blogImg} alt="cart" className='project-img' />
           <div className="layer">
-            <h3>Blog App</h3>
+            <h3>Blog App(React)</h3>
             <p>Discover the latest happenings in Bollywood, Hollywood, fitness, food, and technology with our dynamic blog app. Stay updated with engaging and informative posts on all your favorite topics, brought to you in one convenient platform</p>
             <div>
               <a href="https://github.com/dipendrasingh100/React-Blog-App" target='_blank' rel='noreferrer'>

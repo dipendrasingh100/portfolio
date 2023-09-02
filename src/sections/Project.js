@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/projects.css"
 import blogImg from "../assets/blog.jpg"
 import frasImg from "../assets/fras.jpg"
-import cartImg from "../assets/e-commerce.jpg"
+// import cartImg from "../assets/e-commerce.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 

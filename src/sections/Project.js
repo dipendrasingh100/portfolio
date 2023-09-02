@@ -41,7 +41,7 @@ const Project = () => {
           <img src={blogImg} alt="cart" className='project-img' />
           <div className="layer">
             <h3>Blog App</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequuntur quia suscipit!</p>
+            <p>Discover the latest happenings in Bollywood, Hollywood, fitness, food, and technology with our dynamic blog app. Stay updated with engaging and informative posts on all your favorite topics, brought to you in one convenient platform</p>
             <div>
               <a href="https://github.com/dipendrasingh100/React-Blog-App" target='_blank' rel='noreferrer'>
                 <button className='Btn'>
@@ -66,7 +66,7 @@ const Project = () => {
           <img src={frasImg} alt="cart" className='project-img' />
           <div className="layer">
             <h3>Face Recognition Based Attendance System</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequuntur quia suscipit!</p>
+            <p>A face recognition-based attendance system automates attendance tracking by utilizing facial recognition technology. It accurately identifies and marks students' presence in real-time, eliminating the need for manual record-keeping and enhancing efficiency for educational institutions.</p>
             <div>
               <a href="https://github.com/dipendrasingh100/FRAS" target='_blank' rel="noreferrer">
                 <button className='Btn'>

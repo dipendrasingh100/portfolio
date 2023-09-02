@@ -21,9 +21,9 @@ const Navbar = () => {
 
         switch (true) {
             case (yscroll === 0): setSelectedNav(1); break
-            case (yscroll >= 4 && yscroll < 1260): setSelectedNav(2); break
-            case (yscroll >= 1260 && yscroll < 1814): setSelectedNav(3); break
-            case (yscroll >= 1814): setSelectedNav(4); break
+            case (yscroll >= 4 && yscroll < 1472): setSelectedNav(2); break
+            case (yscroll >= 1472 && yscroll < 2000): setSelectedNav(3); break
+            case (yscroll >= 2000): setSelectedNav(4); break
             default: setSelectedNav(1); break
         }
     }

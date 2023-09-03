@@ -115,6 +115,10 @@ a {
   animation: ex 0.5s ease-in-out forwards;
 }
 
+.main-container{
+  overflow-x: hidden;
+}
+
 
 @keyframes ex{
   0%{

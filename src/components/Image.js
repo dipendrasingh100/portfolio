@@ -28,7 +28,7 @@ const Image = () => {
       </div>
       <div className="content">
         <p className='hello' data-aos='fade-down'>HELLO.</p>
-        <h1>I Am <span ref={title}>Full-Stack Developer</span></h1>
+        <h1>I Am <span ref={title}></span></h1>
         <div className='social'>
           <a href="https://www.linkedin.com/in/dipendrahada/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedin} size="lg" className='icon' />

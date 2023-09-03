@@ -13,7 +13,7 @@ const About = () => {
       </div>
       <div className="detail" data-aos="fade-left">
         <h2 className='about'>ABOUT ME</h2>
-        <p>Energetic computer science graduate skilled in full stack development. Proficient in front-endtechnologies including HTML, CSS, JavaScript, and React.js, complemented by back-end expertise inPython, Flask, Django, SQL, and MongoDB. Demonstrated ability to excel within collaborative teamswhile swiftly adapting to new technologies.</p>
+        <p>Energetic computer science graduate skilled in full stack development. Proficient in front-end technologies including HTML, CSS, JavaScript, and React.js, complemented by back-end expertise inPython, Flask, Django, SQL, and MongoDB. Demonstrated ability to excel within collaborative teams while swiftly adapting to new technologies.</p>
         <a className='btn' href={resume} download>RESUME</a>
       </div>
     </div>

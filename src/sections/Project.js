@@ -2,6 +2,8 @@ import React from 'react'
 import "../styles/projects.css"
 import blogImg from "../assets/blog.jpg"
 import frasImg from "../assets/fras.jpg"
+import spotifyImg from "../assets/spotify.jpg"
+
 // import cartImg from "../assets/e-commerce.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
@@ -11,6 +13,33 @@ const Project = () => {
     <div className='project-container' id='projects'>
       <h1 className='mb-20'>PROJECTS</h1>
       <div className="projects">
+
+      <div className="project" data-aos="fade-up">
+          <img src={spotifyImg} alt="cart" className='project-img' />
+          <div className="layer">
+            <h3>Spotify Clone(React)</h3>
+            <p>Explore my Spotify Clone project, where I leveraged React's capabilities to replicate the magic of Spotify's music discovery and playback features.</p>
+            <div>
+              <a href="https://github.com/dipendrasingh100/Spotify-clone" target='_blank' rel='noreferrer'>
+                <button className='Btn'>
+                  <div className='sign'>
+                    <FontAwesomeIcon icon={faCode} size="lg" style={{ color: "#ffffff", }} />
+                  </div>
+                  <div className="text">Code</div>
+                </button>
+              </a>
+              <a href="https://spotify-clone-dipendra.netlify.app/" target='_blank' rel="noreferrer">
+                <button className='Btn'>
+                  <div className='sign'>
+                    <FontAwesomeIcon icon={faUpRightFromSquare} size="lg" style={{ color: "#ffffff", }} />
+                  </div>
+                  <div className="text">Demo</div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="project" data-aos="fade-up">
           <img src={blogImg} alt="cart" className='project-img' />
           <div className="layer">
@@ -50,14 +79,14 @@ const Project = () => {
                   <div className="text">Code</div>
                 </button>
               </a>
-              <a href="https://www.google.com/" >
+              {/* <a href="https://www.google.com/" >
                 <button className='Btn'>
                   <div className='sign'>
                     <FontAwesomeIcon icon={faUpRightFromSquare} size="lg" style={{ color: "#ffffff", }} />
                   </div>
                   <div className="text">Demo</div>
                 </button>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

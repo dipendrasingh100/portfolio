@@ -43,7 +43,7 @@ const Project = () => {
         <div className="project" data-aos="fade-up">
           <img src={blogImg} alt="cart" className='project-img' />
           <div className="layer">
-            <h3>Blog App(React)</h3>
+            <h3>Blog App</h3>
             <p>Discover the latest happenings in Bollywood, Hollywood, fitness, food, and technology with our dynamic blog app. Stay updated with engaging and informative posts on all your favorite topics, brought to you in one convenient platform</p>
             <div>
               <a href="https://github.com/dipendrasingh100/React-Blog-App" target='_blank' rel='noreferrer'>

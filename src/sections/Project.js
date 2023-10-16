@@ -3,6 +3,7 @@ import "../styles/projects.css"
 import blogImg from "../assets/blog.jpg"
 import frasImg from "../assets/fras.jpg"
 import spotifyImg from "../assets/spotify.jpg"
+import cartforusImg from "../assets/cartforus.jpg"
 
 // import cartImg from "../assets/e-commerce.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -14,7 +15,32 @@ const Project = () => {
       <h1 className='mb-20'>PROJECTS</h1>
       <div className="projects">
 
-      <div className="project" data-aos="fade-up">
+        <div className="project" data-aos="fade-up">
+          <img src={cartforusImg} alt="cart" className='project-img' />
+          <div className="layer">
+            <h3>CartForUs(E-commerce)</h3>
+            <p>E-commerce web application leveraging the power of the MERN (MongoDB, Express, React, Node.js) stack, ensuring a seamless and responsive user experience..</p>
+            <div>
+              <a href="https://github.com/dipendrasingh100/CARTFORUS" target='_blank' rel='noreferrer'>
+                <button className='Btn'>
+                  <div className='sign'>
+                    <FontAwesomeIcon icon={faCode} size="lg" style={{ color: "#ffffff", }} />
+                  </div>
+                  <div className="text">Code</div>
+                </button>
+              </a>
+              <a href="https://cartforus.netlify.app/" target='_blank' rel="noreferrer">
+                <button className='Btn'>
+                  <div className='sign'>
+                    <FontAwesomeIcon icon={faUpRightFromSquare} size="lg" style={{ color: "#ffffff", }} />
+                  </div>
+                  <div className="text">Demo</div>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="project" data-aos="fade-up">
           <img src={spotifyImg} alt="cart" className='project-img' />
           <div className="layer">
             <h3>Spotify Clone(React)</h3>
